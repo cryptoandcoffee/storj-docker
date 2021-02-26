@@ -17,7 +17,7 @@ docker run -d --restart unless-stopped --stop-timeout 300 \
     -e WALLET="0xxxx" \
     -e EMAIL="x@x.com" \
     -e ADDRESS="x.x.x.x:28967" \
-    -e STORAGE="10GB" \
+    -e STORAGE="500GB" \
     --mount type=bind,source=/root/storj-docker/identity/storagenode,destination=/app/identity \
     --mount type=bind,source=/root/storj-docker/storj/,destination=/app/config \
     --name storagenode storjlabs/storagenode:latest
